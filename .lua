@@ -91,9 +91,6 @@ local function applyMacros(code)
 end;
 
 btns.execBtn.MouseButton1Click:Connect(function()
-    if executing then
-        return;
-    end
     loadstring(applyMacros(editor.getCode()))()
 end);
 
